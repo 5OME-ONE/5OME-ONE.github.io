@@ -49,8 +49,12 @@ So, let's try `operation_duck_hunt` as our input, and VOILA!
 
 
 *Note: the number at beginning of the flag is just the output of `GetTickCount` API call which Retrieves the number of milliseconds that have elapsed since the system was started, this number will change every time we run the binary.*
+
+
 ___
 ___
+
+
 
 ## **SimpleObfuscator**
 ### **General information:**
