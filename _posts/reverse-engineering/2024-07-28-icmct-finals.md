@@ -2,7 +2,7 @@
 title: "ICMTC CTF Finals 2024"
 classes: wide
 header:
-  teaser: /assets/images/Covers/ICMTC_finals_cover.jpg
+  teaser: /assets/images/Covers/ICMTC_finals_cover.png
 ribbon:   DodgerBlue
 description: "A Write-Up for two of the ICMTC CTF Reverse Engineering challenges "
 categories:
@@ -19,6 +19,8 @@ CPU :  64-bit
 Subsystem :  Console      
 Packing :   NO          
 MD5 Hash : 046A587250419523A20DB0464ACFC702
+
+
 ### **Running the binary:**
 First, Let's run the program:
 
