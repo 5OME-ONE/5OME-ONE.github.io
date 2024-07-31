@@ -2,7 +2,7 @@
 title: "ICMTC CTF Finals 2024"
 classes: wide
 header:
-  teaser: /assets/images/Covers/ICMTC_finals_cover.png
+  teaser: /assets/images/Covers/ICMTC_cover.png
 ribbon:   DodgerBlue
 description: "A Write-Up for two of the ICMTC CTF Reverse Engineering challenges "
 categories:
