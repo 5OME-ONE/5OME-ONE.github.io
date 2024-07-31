@@ -4,7 +4,7 @@ classes: wide
 header:
   teaser: /assets/images/Covers/ICMTC_cover.png
 ribbon:   DodgerBlue
-description: "A Write-Up for two of the ICMTC CTF Reverse Engineering challenges "
+description: "A Write-Up for two of the ICMTC CTF Finals Reverse Engineering challenges "
 categories:
   - Reverse Engineering
 toc: true
