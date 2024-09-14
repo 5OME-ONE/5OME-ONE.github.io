@@ -3,7 +3,7 @@ title: "GrabThePhisher"
 classes: wide
 header:
   teaser: /assets/images/Covers/GrabThePhisher.jpeg
-ribbon:   Turquoise
+ribbon:   Green
 description: "A Walkthrough to the Cyberdefenders blue team lab focusing on Threat Intel and Reverse Engineering."
 categories:
   - Reverse Engineering
@@ -37,7 +37,7 @@ Exploring the code, We see that only one wallet that has a "onclick" event for i
 ![alt text](/assets/images/reverse-engineering/GrabThePhisher/index-1.png) 
 ![alt text](/assets/images/reverse-engineering/GrabThePhisher/index-2.png)
 
->**Answer:** `MetaMask`
+>**Answer:** `Meta****`
 
 ___
 
@@ -67,7 +67,7 @@ This constructs an HTML-formatted message containing:
 
 So, this is the file that  has the code for the phishing kit.
 
->**Answer:** `MetaMask.php`
+>**Answer:** `Meta****.php`
 
 ___
 
@@ -91,7 +91,7 @@ $city = $array->city->name_en;
 
 This block of code uses the `Sypex Geo` API to retrieve the geolocation of the user based on their IP address `$_SERVER['REMOTE_ADDR']`, The country and city names are extracted and stored in $geo and $city.
 
->**Answer:** `Sypex Geo`
+>**Answer:** `Sy*** G**`
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 **Q6:** Write down the seed phrase of the most recent phishing incident?
 
->**Answer:** `father also recycle embody balance concert mechanic believe owner pair muffin hockey`
+>**Answer:** `father also recycle ******** ******** ******** ******** ******** ******** ******** ********`
 
 ___
 
@@ -138,19 +138,19 @@ function sendTel($message){
     file_get_contents($filename);
 ```
 
->**Answer:** `Telegram`
+>**Answer:** `Tele****`
 
 ___
 
 **Q8:** What is the token for the channel?
 
->**Answer:** `5457463144:AAG8t4k7e2ew3tTi0IBShcWbSia0Irvxm10`
+>**Answer:** `5457463144:AAG8t4k7e2e************************`
 
 ___
 
 **Q9:** What is the chat ID of the phisher's channel?
 
->**Answer:** `5442785564`
+>**Answer:** `5442******`
 
 ___
 
@@ -169,7 +169,7 @@ The attacker had fingerprinted his code with the following greeting massage:
  */
 ```
 
->**Answer:** `j1j1b1s@m3r0`
+>**Answer:** `j1j1b1s@****`
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 Using the following request to the getChat method:
 
-```json
+```php
 https://api.telegram.org/bot5457463144:AAG8t4k7e2ew3tTi0IBShcWbSia0Irvxm10/getChat?chat_id=5442785564
 ```
 
@@ -185,13 +185,13 @@ The response is:
 
 ![alt text](/assets/images/reverse-engineering/GrabThePhisher/api_response.png)
 
->**Answer:** `Marcus Aurelius`
+>**Answer:** `Mar*** Aure****lius****`
 
 ___
 
 **Q12:** What is the username of the Phish Actor?
 
->**Answer:** `pumpkinboii`
+>**Answer:** `pumpkin****`
 
 
 ___
