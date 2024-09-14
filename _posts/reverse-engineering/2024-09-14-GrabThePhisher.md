@@ -25,7 +25,7 @@ Provided the phishing kit, you as a soc analyst are requested to analyze it and 
 ## Walkthrough
 We start by unziping the file named `c75-GrabThePhisher.zip`, which has been provided, using `cyberdefenders.org` as password.
 
-**###Q1:** Which wallet is used for asking the seed phrase?
+### **Q1:** Which wallet is used for asking the seed phrase?
 
 After decompressing, we are left with a some files including an HTML file, exploring the content we see some wallets, only one off these wallets matches 
 
@@ -41,7 +41,7 @@ Exploring the code, We see that only one wallet that has a "onclick" event for i
 
 ___
 
-**###Q2:** What is the file name that has the code for the phishing kit?
+### **Q2:** What is the file name that has the code for the phishing kit?
 
 Opening the Metamask folder, there are three files: 
 - Fonts
@@ -71,14 +71,14 @@ So, this is the file that  has the code for the phishing kit.
 
 ___
 
-**###Q3:** In which language was the kit written?
+### **Q3:** In which language was the kit written?
 
 >**Answer:** `PHP`
 
 ___
 
 
-**###Q4:** What service does the kit use to retrieve the victim's machine information?
+### **Q4:** What service does the kit use to retrieve the victim's machine information?
 
 At the beginning the code, we see the following block:
 
@@ -95,7 +95,7 @@ This block of code uses the `Sypex Geo` API to retrieve the geolocation of the u
 
 ___
 
-**###Q5:** How many seed phrases were already collected?
+### **Q5:** How many seed phrases were already collected?
 
 later in the code, we see this block:
 
@@ -114,13 +114,13 @@ Now, we go the `log.txt`, we see that it has 3 already collected phrases:
 
 ___
 
-**###Q6:** Write down the seed phrase of the most recent phishing incident?
+### **Q6:** Write down the seed phrase of the most recent phishing incident?
 
 >**Answer:** `father also recycle ******** ******** ******** ******** ******** ******** ******** ********`
 
 ___
 
-**###Q7:** Which medium had been used for credential dumping?
+### **Q7:** Which medium had been used for credential dumping?
 
 The following block of code uses the `sendTel()` function to send a crafted message to a Telegram chat.
 
@@ -142,19 +142,19 @@ function sendTel($message){
 
 ___
 
-**###Q8:** What is the token for the channel?
+### **Q8:** What is the token for the channel?
 
 >**Answer:** `5457463144:AAG8t4k7e2e************************`
 
 ___
 
-**###Q9:** What is the chat ID of the phisher's channel?
+### **Q9:** What is the chat ID of the phisher's channel?
 
 >**Answer:** `5442******`
 
 ___
 
-**###Q10:** What are the allies of the phish kit developer?
+### **Q10:** What are the allies of the phish kit developer?
 
 The attacker had fingerprinted his code with the following greeting massage:
 
@@ -173,7 +173,7 @@ The attacker had fingerprinted his code with the following greeting massage:
 
 ___
 
-**###Q11:** What is the full name of the Phish Actor?
+### **Q11:** What is the full name of the Phish Actor?
 
 Using the following request to the getChat method:
 
@@ -189,7 +189,7 @@ The response is:
 
 ___
 
-**###Q12:** What is the username of the Phish Actor?
+### **Q12:** What is the username of the Phish Actor?
 
 >**Answer:** `pumpkin****`
 
