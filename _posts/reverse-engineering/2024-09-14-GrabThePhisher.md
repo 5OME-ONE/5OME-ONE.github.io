@@ -23,11 +23,11 @@ Provided the phishing kit, you as a soc analyst are requested to analyze it and 
 **Difficulty:** Easy 
 
 ## Walkthrough
-We start by unziping the file named `c75-GrabThePhisher.zip`, which has been provided, using `cyberdefenders.org` as password.
+We start by unzipping the file named `c75-GrabThePhisher.zip`, which has been provided, using `cyberdefenders.org` as password.
 
 ### **Q1:** Which wallet is used for asking the seed phrase?
 
-After decompressing, we are left with a some files including an HTML file, exploring the content we see some wallets, only one off these wallets matches 
+After decompressing, we are left with some files including an HTML file, exploring the content we see some wallets, only one of these wallets matches 
 
 ![alt text](/assets/images/reverse-engineering/GrabThePhisher/wallets.png)
 
@@ -156,7 +156,7 @@ ___
 
 ### **Q10:** What are the allies of the phish kit developer?
 
-The attacker had fingerprinted his code with the following greeting massage:
+The attacker had fingerprinted his code with the following greeting message:
 
 ```php
 /*
