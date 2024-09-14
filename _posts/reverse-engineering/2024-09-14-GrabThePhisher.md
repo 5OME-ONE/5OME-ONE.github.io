@@ -3,7 +3,7 @@ title: "GrabThePhisher"
 classes: wide
 header:
   teaser: /assets/images/Covers/GrabThePhisher.jpeg
-ribbon:   White
+ribbon:   Turquoise
 description: "A Walkthrough to the Cyberdefenders blue team lab focusing on Threat Intel and Reverse Engineering."
 categories:
   - Reverse Engineering
@@ -29,13 +29,13 @@ We start by unziping the file named `c75-GrabThePhisher.zip`, which has been pro
 
 After decompressing, we are left with a some files including an HTML file, exploring the content we see some wallets, only one off these wallets matches 
 
-![alt text](wallets.png)
+![alt text](/assets/images/reverse-engineering/GrabThePhisher/wallets.png)
 
 Exploring the code, We see that only one wallet that has a "onclick" event for its buttons is `MetaMask` which uses JavaScript (vib(1); jj2 = true; jj = true;). This is commonly designed for asking the seed phrase.
 
-![alt text](index-3.png)
-![alt text](index-1.png) 
-![alt text](index-2.png)
+![alt text](/assets/images/reverse-engineering/GrabThePhisher/index-3.png)
+![alt text](/assets/images/reverse-engineering/GrabThePhisher/index-1.png) 
+![alt text](/assets/images/reverse-engineering/GrabThePhisher/index-2.png)
 
 >**Answer:** `MetaMask`
 
@@ -108,7 +108,7 @@ Which is used to ensures the attacker has a backup of the stolen phrases, the re
 
 Now, we go the `log.txt`, we see that it has 3 already collected phrases:
 
-![alt text](logs.png)
+![alt text](/assets/images/reverse-engineering/GrabThePhisher/logs.png)
 
 >**Answer:** `3`
 
@@ -183,7 +183,7 @@ https://api.telegram.org/bot5457463144:AAG8t4k7e2ew3tTi0IBShcWbSia0Irvxm10/getCh
 
 The response is:
 
-![alt text](api_response.png)
+![alt text](/assets/images/reverse-engineering/GrabThePhisher/api_response.png)
 
 >**Answer:** `Marcus Aurelius`
 
