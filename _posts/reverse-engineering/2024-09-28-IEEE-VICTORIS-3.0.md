@@ -101,7 +101,7 @@ ___
 - **Link**: [Here](https://mega.nz/file/tiEBAJgb#z9JyVrxJybRiizhinpHjRJqhRRSy2mDaeghbakjHa4o)
 
 
-*First we have an `ELF` file a `TXT` file., let's start with the ELF.*
+*First we have an `ELF` file and a `TXT` file., let's start with the ELF.*
 ### **General information:**
 
 >Type :  ELF     
@@ -117,10 +117,10 @@ First, let's run the program:
 
 The program seems to encode our input somehow and print it, the mission is to find the right input that generates the string in the `.txt` file.
 
-## **Analysis:**
+### **Analysis:**
 At the beginning, I tried to analyze it statically with IDA, but it was way complicated, so I moved on to dynamic analysis using `IDA Remote Debugger`.
 
-First, I set a bp at the where the usr is sked for input, but I ended up getting this error:
+First, I set a bp at where the usr is asked for input, but I ended up getting this error several times:
 
 >4088FD: got SIGVTALRM signal (Virtual alarm clock) (exc.code 1a, tid 5125)
 
@@ -128,7 +128,7 @@ After some research, I found out that this is error is generated because the bin
 
 I debugged the binary slowly until I found the call to `setitimer()` and replaced it with `nop` and fixed the return value, now we can debug the program more easily.
 
-After heavy debugging, I still don't understand how the encode is done, so I move to a quicker way.
+After heavy debugging, I still don't understand how the encode is done, so I moved to a quicker way.
 
 Since we have the desired output, why can't we just brute-force it?, So, I wrote the following Python script to automate the process and tried to make it as simple as possible so that it runs quickly:
 
@@ -193,7 +193,7 @@ if __name__ == "__main__":
 print(prefix)
 ```
 
-## Running the script: 
+### Running the script: 
 
 After running the script for only 10 seconds, we have got our flag.
 
@@ -214,13 +214,13 @@ ___
 ### Description:
 I was on a mission to track down a notorious cybercriminal, someone responsible for a series of high-profile cyberattacks. My latest intel revealed that he was planning a fresh strike on a famous restaurant chain that had already been hit, leaking sensitive data. Through some clever digging, I managed to retrieve a single image of the place he was spotted—a quiet café, but the clues were all there. Now, it’s up to you. track him down, and uncover where he was before he disappears again. Time is ticking.
 
-Flag Format: IEEE{**-*******}
+Flag Format: `IEEE{**-*******}`
 
 ### Solution:
 
 First, I tried to search the full image on google lens, but I didn't found somwthing useful, So I decided to take it part by part.
 
-I noticed the reversed word on the umbrella `Bazooka` -which is a famous fried chicken- and a flag for `Cup & Task` cafe in the other side, I started to searching on google maps for any branchs of `Bazooka` that is near to a branch of `Cup & task`.
+I noticed the reversed word on the umbrella `Bazooka` -which is a famous fried chicken restaurant- and a flag for `Cup & Task` cafe in the other side, I started to searching on google maps for any branchs of `Bazooka` that is near to a branch of `Cup & task`.
 
 
 I have got a match on `Orium mall` at `El-Shorouk` city, so I tried that and I got the point.
@@ -232,7 +232,7 @@ I have got a match on `Orium mall` at `El-Shorouk` city, so I tried that and I g
 <span style="color:#00FFFF;">**IEEE{El-Shorouk}**</span>
 
 
-## <lable dir = "ltr"> المصفوع </label>
+## <span dir="rtl">المصفوع</span>
 
 - **Category**: OSINT
 - **Difficulty**: Easy
@@ -243,7 +243,7 @@ In a sudden eruption of chaos, a former writer for a famous American media perso
 Flag Format: IEEE{FirstName_LastName}
 
 ### Solution:
-All I had to do is to search on google the the phrase `A writer for American media personality struck a man in the face multiple times` an from the [first website](https://pagesix.com/2024/04/09/celebrity-news/former-howard-stern-show-writer-elisa-jordana-arrested-after-repeatedly-hitting-man/) I got the female writer's name
+All I had to do is to search on google with the phrase `A writer for American media personality struck a man in the face multiple times` and from the [first website](https://pagesix.com/2024/04/09/celebrity-news/former-howard-stern-show-writer-elisa-jordana-arrested-after-repeatedly-hitting-man/) I got the female writer's name
 
 The article only mentioned the man as `Zscorro` but never mentioned his real-name, So I start to search on `Who is Zscorro` `Elisa Jordana's boyfriend` and I found his name [here](https://www.wikibiostar.com/articles/who-is-elisa-jordana-boyfriend-zscorro-and-what-happened-to-him/)
 
