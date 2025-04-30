@@ -3,8 +3,8 @@ main:
     url: /categories/
   - title: "Reverse Engineering"
     url: /categories/#reverse-engineering
-  - title: "Malware Analysis"
-    url: /categories/#malware-analysis
+  - title: "Write-Ups"
+    url: /categories/#write-ups
   - title: "Tutorials & Labs"
     url: /categories/#tutorials-labs  
   - title: "About Me"
