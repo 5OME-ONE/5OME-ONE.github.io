@@ -38,7 +38,7 @@ ___
 
 This file is a full obfuscated Python code that uses dumb names for its variables and functions and has lots of tricky math and character combinations, so let us take it step by step deobfuscating this script manually
 
-***You can use AI of course — but where’s the fun in that?.***
+***You can use AI of course — but where’s the fun in that?***
 
 ## Simplify math
 
@@ -223,7 +223,7 @@ def function_5(val: str) -> str:
     return "".join(str2)
 ```
 
-The next one is the main function, which looked like that after Simplify its math and characters calculation :
+The next one is the main function, which looked like that after simplify its math and characters calculation :
 
 ```py
 def IllIlllIIllIlIIIIIlI():
