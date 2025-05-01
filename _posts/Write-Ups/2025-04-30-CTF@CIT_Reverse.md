@@ -2,7 +2,7 @@
 title: "CTF@CIT!"
 classes: wide
 header:
-  teaser: /assets/images/Covers/CTF@CIT_Logo.jpg
+  teaser: /assets/images/Covers/CTF@CIT_REV_Logo.jpg
 ribbon:   Green
 description: "Write-up for 2 Reverse challenges from the annual World-Wide CTF@CIT."
 categories:
