@@ -1,5 +1,5 @@
 ---
-title: "CTF@CIT!"
+title: "CTF@CIT_REV"
 classes: wide
 header:
   teaser: /assets/images/Covers/CTF@CIT_REV_Logo.jpg
