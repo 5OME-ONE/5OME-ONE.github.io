@@ -6,7 +6,7 @@ header:
 ribbon:   Turquoise
 description: "Write-Up for 2 Reverse challenges and 2 OSINT challenges from the IEEE VICTORIS 3.0 CTF."
 categories:
-  - Reverse Engineering
+  - Write-Ups
 toc: true
 ---
 

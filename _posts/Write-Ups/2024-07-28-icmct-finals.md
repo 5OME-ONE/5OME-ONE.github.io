@@ -6,7 +6,7 @@ header:
 ribbon:   DodgerBlue
 description: "A Write-Up for two of the ICMTC CTF Finals Reverse Engineering challenges "
 categories:
-  - Reverse Engineering
+  - Write-Ups
 toc: true
 ---
 

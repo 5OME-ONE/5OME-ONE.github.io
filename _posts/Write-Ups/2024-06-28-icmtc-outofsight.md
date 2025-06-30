@@ -6,7 +6,7 @@ header:
 ribbon:   DodgerBlue
 description: "A Write-Up for ICMTC Reverse challenge Out of Sight"
 categories:
-  - Reverse Engineering
+  - Write-Ups
 toc: true
 ---
 
