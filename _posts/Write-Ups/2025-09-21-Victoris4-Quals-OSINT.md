@@ -24,7 +24,7 @@ This is a step-by-step walkthrough aimed at beginners.
 
 ### Description
 
-```
+```txt
 30 milliseconds.
 That’s all it took for a curious researcher to realize something wasn’t right.
 His SSH connections on a Debian Sid box felt… heavy, CPU usage spiked without reason, A memory debugger whispered errors no one had ever seen before.
@@ -50,11 +50,12 @@ If the maintainer was John Middle Doe, with first commit on 01/01/2020, and team
 IEEE{John-Middle-Doe,01/01/2020,Alice-Smith,Bob-Brown}
 ```
 First we search for the name of the target project and after some researching we can be sure that it's XZ Utils incident, so we start searching for the maintainers of the project.
+
 On the official GitHub repository, we can see this commit in the `AUTHORS` file under the name `Add Jia Tan to AUTHORS.`
 
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_Quals/github-commit.png)
 
-So, now we know that there is another maintainer (Author) than the original `Lasse Collin`, his name is `Jia Tan`, but we need his full name, so searching any commits archive like [git.tukaani.org](https://git.tukaani.org/), by searching all `Jia Tan`'s commits, we see a different name at `2022-12-30` with the name `Jia Cheong Tan`, 'Cheong' is a name often used in Cantonese, but 'Jia' is rarely used in Cantonese. For this reason, Mr. Boes speculates that "the name 'Jia Cheong Tan' is just a plausible combination of Chinese-sounding names."
+So, now we know that there is another maintainer (Author) than the original `Lasse Collin`, his name is `Jia Tan`, but we need his full name, so searching any commits archive like [git.tukaani.org](https://git.tukaani.org/), by searching all `Jia Tan`'s commits, we see a different name at `2022-12-30` with the name `Jia Cheong Tan`, 'Cheong' is a name often used in Cantonese, but 'Jia' is rarely used in Cantonese. For this reason, we speculates that "the name 'Jia Cheong Tan' is just a plausible combination of Chinese-sounding names."
 
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_Quals/full-name.png)
 
@@ -85,7 +86,7 @@ Another one this `Dennis Ens`, he also tried to pressure `Lasse Collin` to add a
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_Quals/mail-3.png)
 
 
-***Teammates: Dennis-Ens,Jigar-Kumar***
+***Teammates: Dennis-Ens & Jigar-Kumar***
 
 Flag: <span style="color:#0056D2;">**IEEE{Jia-Cheong-Tan,10/29/2021,Dennis-Ens,Jigar-Kumar}**</span>
 
@@ -124,20 +125,20 @@ Now, we have the name `Conor Fitzpatrick`and a second group `vx-underground`, so
 
 In the group, you can see a link for the [Rule 5(c)(3) Affidavit](https://storage.courtlistener.com/recap/gov.uscourts.nysd.595805/gov.uscourts.nysd.595805.1.0.pdf) of this `Conor Fitzpatrick`.
 
-Now, we knows even more than we need:
+by opening it, we know even more than we need:
 - `Conor Fitzpatrick` is the admin we seek for.
 
 - His alias is `pompompurin`
 
 - The Forum is `BreachForums`
 
-- The FBI case agent is ***`John Longmire`***
+- The FBI case agent is `John Longmire`
 
 With all what we have, we now can go to the the case file on [United States
 Attorney's Office](https://www.justice.gov/usao-edva/united-states-v-conor-brian-fitzpatrick) and get the Court Documents
  mainly the [Criminal Complaint](https://www.justice.gov/usao-edva/file/1300536/dl?inline).
 
-In the Criminal Complaint, we can see details of `pompompurin` middlemanning a deal between an OCE and a forum-user named `expo2020`, `pompompurin` had given the OCE his wallet address which is what we need 
+In the Criminal Complaint, we can see details of `pompompurin` middlemanning a deal between an FBI OCE and a forum-user named `expo2020`, `pompompurin` had given the OCE his wallet address which is what we need 
 
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_Quals/wallet.png)
 
@@ -154,7 +155,7 @@ later, we see another DM message from someone asking about the same data, and `e
 
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_Quals/first-contact.png)
 
-This could be our OCE, so we search his profile and see him replying to the same `pompompurin` message that was within the `Criminal Complaint`
+This could be our OCE, so we search his profile and DMs and see him replying to the same `pompompurin` message that was within the `Criminal Complaint`
 
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_Quals/confirm-deal.png)
 
@@ -195,9 +196,9 @@ By image-searching we see an exact match of the building, it belongs to `CONAM C
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_Quals/image-search.png)
 
 Visiting their History page on their [Official Website](https://www.conamco.com/about-us/history), we see this info
-```
-In Alaska,  CONAM has enjoyed partnerships with Alaska Native Companies including CIRI, AHTNA, Tikigaq Corporation of Point Hope, KIC of Kotzebue, Kuukpik Corporation of Nuiqsut, and AMES1, LLC.
-```
+
+>In Alaska,  CONAM has enjoyed partnerships with Alaska Native Companies including CIRI, AHTNA, Tikigaq Corporation of Point Hope, KIC of Kotzebue, Kuukpik Corporation of Nuiqsut, and AMES1, LLC.
+
 
 Now, we know that their project in Alaska is within `Point Hope`, so we go to our google maps and take a look on that place
 
