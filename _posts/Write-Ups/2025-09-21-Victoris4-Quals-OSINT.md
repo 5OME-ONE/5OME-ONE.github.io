@@ -1,5 +1,5 @@
 ---
-title: "OSINT Write-up | IEEE VICTORIS4 CTF Quals"
+title: "OSINT Write-up — IEEE VICTORIS4 CTF Quals"
 classes: wide
 header:
   teaser: /assets/images/Covers/victoris4.png
@@ -11,7 +11,7 @@ categories:
 toc: true
 ---
 
-# <span style="color:#0056D2;">**OSINT Write-up | IEEE VICTORIS4 CTF Quals**</span>
+# <span style="color:#0056D2;">**OSINT Write-up — IEEE VICTORIS4 CTF Quals**</span>
 
 After a full 24 hours in the `IEEE VICTORIS4 CTF` qualifications phase, I’m happy to share my write-up for three OSINT challenges I created: two Investigations (*Easy/Medium*) and one Geo (*Hard*).
 
