@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Mahmoud Osama"
   avatar           : /assets/images/site_data/avatar.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Malware Analyst & Reverse Engineer"
+  bio              : "Malware Analyst & Blue Teamer"
   location         : "Egypt"
   email            :
   links:
