@@ -11,7 +11,7 @@ categories:
 toc: true
 ---
 
-## <span style="color:#0056D2;">**Intoduction**</span>
+## <span style="color:#0056D2;">**Introduction**</span>
 
 After a full 24 hours in the `IEEE VICTORIS4 CTF` qualifications phase, I’m happy to share my write-up for three OSINT challenges I created: two Investigations (*Easy/Medium*) and one Geo (*Hard*).
 
