@@ -22,9 +22,8 @@ This is a step-by-step walkthrough aimed at beginners.
 ## <span style="color:#0056D2;">**Domains of Deception**</span>
 
 
-### Description
-
-
+>### Description
+>
 >Whispers spread across the net: a phantom domain-smith forging shadows of giants.
 His masterpiece? rnicrosoft[.]com — a false mirror of trust, luring the careless.
 One careless step led hunters to his trail.
@@ -32,7 +31,7 @@ One careless step led hunters to his trail.
 >Follow the traces. Unmask the trickster. Gather his secrets.
 >
 >### Flag parts:
->⦁	First part (scammer name): the scammer’s real first name.
+>⦁	First part (scammer name): the scammer’s real full name.
 >
 >⦁	Second part (oldest domain): of the >16,390 domains registered under the scammer’s name, identify the oldest domain registration (domain string only, e.g. example[.]com).
 >
@@ -43,17 +42,19 @@ One careless step led hunters to his trail.
 >### Flag format:
 >
 > IEEE{Real_Name,oldest.domain,Leakcount}
->___
+
+
+
 First, we need the `Scammer's name` so we open [WHOIS Domain Lookup](https://www.whois.com/whois/rnicrosoft.com) and search with the domain name, now we know who is the Registrant a.k.a. `Scammer` and also some extra useful info about him.
 
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_finals/WHOIS.png)
 
 Now, we know that he has over 16,390 domains registered under his name,
-with that much records, if we went to [whoisology.com](https://whoisology.com/name/park%20hyungjin/1) and searched with the Registrant name `Park HyungJin`, we will get a partial list of records, but those records aren't in order and we will have to search the Creation Date manually in all of them.
+with that much records, if we went to [whoisology.com](https://whoisology.com/name/park%20hyungjin/1) and searched with the Registrant name `Park HyungJin`, we will get a partial list of records, but those records aren't in order and we will have to search for the Creation Date manually in all of them.
 
-After some search, we find this [website](https://www.bigdomaindata.com/reverse-whois/) that offers the full list wit a price of `$25`, it also shows only 100 records without price as a free trial, so we clarify our search filter like this:
+After some search, we find this [website](https://www.bigdomaindata.com/reverse-whois/) that offers the full list with a price of `$25`, it also shows only 100 records without price as a free trial, so we clarify our search filter like this:
 
-![alt text](/assets/images/Write-Ups/victoris4_OSINT_finals/<Search-filter.png>)
+![alt text](/assets/images/Write-Ups/victoris4_OSINT_finals/Search-filter.png)
 
 Now we get this result for the oldest 100 records:
 
@@ -63,8 +64,6 @@ Now we get this result for the oldest 100 records:
 
 Last part, we need to find numeric count of leaks that his email appeared in , so we open [HIBP](https://haveibeenpwned.com/) and search with his email `b2c@naver.com`, the result is `4.
 
-Flag: <span style="color:#0056D2;">**{Park_HyungJin,wni.net,4}**</span>
-
 For the Bounus part, we go to [BreachDirectory](https://breachdirectory.org/) and search for the email `b2c@naver.com`, we get this result:
 
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_finals/breachdirectory.png)
@@ -73,7 +72,7 @@ Now we already have the first password `1111`. To get the other one we open any 
 
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_finals/hash-cracker.png)
 
-***NOTE: you can also use this [tg bot](@HaveIBeenHacked_Bot) made by [Kalawy](https://www.linkedin.com/in/mohamedwagdy72/) to get the passwords straightforward.***
+***NOTE: you can also use this [tg bot](t.me/HaveIBeenHacked_Bot) made by [Kalawy](https://www.linkedin.com/in/mohamedwagdy72/) to get the passwords straightforward.***
 
 Flag: <span style="color:#0056D2;">**IEEE{Park_HyungJin,wni.net,4}**</span>
 
@@ -112,7 +111,7 @@ ___
 >### Flag Format:
 >
 >>IEEE{name,group,string_crc32,paths_crc32}
->___
+
 
 First, a simple search will bring us to the official [incident report ](https://www.viasat.com/perspectives/corporate/2022/ka-sat-network-cyber-attack-overview/) from `Viasat`, the owner of the satellite, Now we know what was the incident.
 
@@ -124,7 +123,7 @@ Now, we go to the [MITRE ATT&CK](https://attack.mitre.org/software/) software pa
 
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_finals/mitre-attack.png)
 
-After knowing the wiper name we can [Malware Bazaar](https://bazaar.abuse.ch/browse.php?search=tag%3AAcidRain) and search with the tag `AcidRain`, we see two samples, we download the oldest one matching the attack date and start analyzing.
+After knowing the wiper's name we can go to [Malware Bazaar](https://bazaar.abuse.ch/browse.php?search=tag%3AAcidRain) and search with the tag `AcidRain`, we see two samples, we download the oldest one matching the attack date and start analyzing.
 
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_finals/malware-bazaar.png)
 
@@ -176,7 +175,7 @@ Provide the coordinates of the place rounded to 3 decimal places.
 
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_finals/sports.png)
 
-First with some image-searching, the construction style strongly suggests this place is in `عين السبع بالمغرب`.
+First with some image-searching and comparing similar images, the construction style strongly suggests this place is in `عين السبع بالمغرب`.
 
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_finals/Aïn-Sebaâ.JPG)
 
