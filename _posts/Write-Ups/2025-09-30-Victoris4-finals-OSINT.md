@@ -72,7 +72,7 @@ Now we already have the first password `1111`. To get the other one we open any 
 
 ![alt text](/assets/images/Write-Ups/victoris4_OSINT_finals/hash-cracker.png)
 
-***NOTE: you can also use this [tg bot](t.me/HaveIBeenHacked_Bot?start=BRqrTQe) made by [Kalawy](https://www.linkedin.com/in/mohamedwagdy72/) to get the passwords straightforward.***
+***NOTE: you can also use this [tg bot](https://t.me/HaveIBeenHacked_Bot?start=BRqrTQe) made by [Kalawy](https://www.linkedin.com/in/mohamedwagdy72/) to get the passwords straightforward.***
 
 Flag: <span style="color:#0056D2;">**IEEE{Park_HyungJin,wni.net,4}**</span>
 
